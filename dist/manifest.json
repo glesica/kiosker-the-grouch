@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Kiosker the Grouch",
+  "description": "An extension to facilitate using Chrome as a kiosk.",
+  "version": "1.0",
+
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+
+  "background": {
+    "scripts": ["js/vendor.js", "js/background.js"]
+  },
+
+  "permissions": [
+    "storage",
+    "tabs",
+    "<all_urls>"
+  ]
+}
