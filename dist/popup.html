@@ -5,20 +5,73 @@
     <title>Getting Started Extension's Popup</title>
     <style>
         body {
+            color: dimgrey;
             font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
             font-size: 100%;
-            min-width: 400px;
+            margin: 0;
+            min-width: 300px;
+        }
+
+        label {
+            display: inline-block;
+            font-size: 0.9rem;
+            padding-top: 1.0rem;
+        }
+
+        input {
+            color: dimgrey;
+        }
+
+        input[type=checkbox], input[type=radio] {
+            vertical-align: middle;
+        }
+
+        input[type=number] {
+            max-width: 75px;
+            vertical-align: middle;
+        }
+
+        #title {
+            background: slategrey;
+            color: aliceblue;
+            font-weight: bold;
+            padding: 1.0rem;
+        }
+
+        #content {
+            padding: 0 1.0rem;
+        }
+
+        #credits {
+            background: ghostwhite;
+            color: grey;
+            font-size: 0.7rem;
+            margin-top: 1.0rem;
+            padding: 0.5rem 1.0rem;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-<h1>Kiosker the Grouch</h1>
-<label for="isEnabled">
-    <input type="checkbox" id="isEnabled" title="isEnabled">Enabled
-</label>
-<label for="tickDelay">
-    <input type="number" id="tickDelay" title="tickDelay">Delay (seconds)
-</label>
+<div id="title">Kiosker the Grouch</div>
+
+<div id="content">
+    <label for="isEnabled">
+        <input type="checkbox" id="isEnabled" title="Enabled">
+        Enabled
+    </label>
+    <br>
+    <label for="tickDelay">
+        Delay:
+        <input type="number" id="tickDelay" title="Delay (seconds)">
+        seconds
+    </label>
+</div>
+
+<div id="credits">
+    A George Lesica joint.
+</div>
+
 <script src="js/popup.js"></script>
 </body>
 </html>
