@@ -1,5 +1,7 @@
 const fs = require('fs');
 
+// Update the manifest version to match the pubspec version
+
 const packagePath = 'package.json';
 const manifestPath = 'dist/manifest.json';
 
