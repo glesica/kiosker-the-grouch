@@ -1,13 +1,13 @@
 {
   "name": "kiosker-the-grouch",
   "version": "1.0.0",
-  "description": "An extension to facilitate using Chrome as a kiosk.",
+  "description": "An extension to facilitate using Chrome as a kiosk or slide show.",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --config webpack/webpack.dev.js --watch",
     "build": "webpack --config webpack/webpack.prod.js"
   },
-  "author": "George Lesica <george@lesica.com",
+  "author": "George Lesica <george@lesica.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
